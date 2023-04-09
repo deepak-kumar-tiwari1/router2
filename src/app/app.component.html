@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">Routering Learn</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/home']" [routerLinkActive]="['active','border','border-dark']">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/about']" [routerLinkActive]="['active','border','border-dark']">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/courses']" [routerLinkActive]="['active','border','border-dark']">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/login']" [routerLinkActive]="['active','border','border-dark']">Sign In</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!-- <app-login></app-login> -->
+<router-outlet></router-outlet>
